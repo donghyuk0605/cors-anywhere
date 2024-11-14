@@ -31,7 +31,7 @@ cors_proxy
     removeHeaders: ["cookie", "cookie2"],
     redirectSameOrigin: true,
     httpProxyOptions: {
-      xfwd: false,
+      xfwd: true,
     },
   })
   .listen(port, host, function () {
